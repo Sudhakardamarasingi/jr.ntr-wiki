@@ -2,18 +2,18 @@ import streamlit as st
 
 st.set_page_config(page_title="Jr. NTR - Fan Page", layout="wide")
 
-# Sidebar Navigation
-st.sidebar.title("🧭 Navigation")
-page = st.sidebar.radio("Go to", ["Home", "Biography", "Career", "Filmography", "Awards"])
+# Sidebar
+st.sidebar.title("🎥 Jr. NTR Wiki")
+page = st.sidebar.radio("Go to", ["Home", "Biography", "Career", "Filmography", "Awards","Anticipated movies","Message"])
 
-# Header Banner
-st.image("https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/N. T. Rama_Rao_Jr._at_BIFF_2012.jpg/800px-N._T._Rama_Rao_Jr._at_BIFF_2012.jpg",
-         caption="N. T. Rama Rao Jr. at the Bangalore International Film Festival (2012)",
-         use_column_width=True)
+# Header 
+st.image("https://i.pinimg.com/736x/cd/52/1b/cd521bef226fe1ea4ba2a12edd742a97.jpg",
+         caption="N. T. Rama Rao Jr",
+         width=250)
 
 # Home
 if page == "Home":
-    st.title("🎬 Jr. NTR - The Young Tiger")
+    st.title("Jr. NTR - The Young Tiger 🐯")
     st.write("""
     **Nandamuri Taraka Rama Rao Jr.**, popularly known as **Jr. NTR**, is one of the biggest stars in Telugu cinema.
     Known for his powerful acting, dance skills, and versatility, Jr. NTR is a legacy carrier of the legendary N. T. Rama Rao.
@@ -77,5 +77,30 @@ elif page == "Awards":
     Jr. NTR is celebrated for both mass and critical appeal.
     """)
 
+#Anticipated movies
+elif page == "Anticipated movies":
+    col1,col2,col3,col4=st.columns(4)
+    with col1:
+        st.image("https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSVZ1yNwu2MLyl3dqE82OX-dRIAE1gxt6Op5EbdWhTXJCz7aaq7",
+         caption="WAR2",
+         use_container_width=True)
+    with col2:     
+        st.image("https://scontent.fblr18-1.fna.fbcdn.net/v/t39.30808-6/488088454_1226089598873434_4650105298467268981_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=833d8c&_nc_ohc=A_kvTtxKjzcQ7kNvwGrah5w&_nc_oc=AdnHe4X5YHsIReruBhz3xFIzTQ-kQLuUOkFc-UL_k-qdWoVAr861x5Y2U_IPehaBCiI&_nc_zt=23&_nc_ht=scontent.fblr18-1.fna&_nc_gid=o_taZAFoGHP3hTLm_mzUHQ&oh=00_AfOwNwLoaqo18cf5iXXdcecvIeBcNE4oGKkcg-tpZwSHnQ&oe=6860FF80",
+         caption="Dragon",
+         use_container_width=True)
+    with col3:     
+        st.image("https://cdn.gulte.com/wp-content/uploads/2025/03/Devara-part-2-.jpg",
+         caption="Devara-2",
+         use_container_width=True)  
+    with col4:     
+        st.image("https://scontent.fblr18-1.fna.fbcdn.net/v/t39.30808-6/505980449_1305279287829972_925382284372086798_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=833d8c&_nc_ohc=VDqfqVr5LzsQ7kNvwFJBrwo&_nc_oc=AdkKQnslPkK3AeUiN6R0lNHZaVdCiT3CQ7PXLR6NhyA0ozhcoGolEYUKzMOef7Ys2ks&_nc_zt=23&_nc_ht=scontent.fblr18-1.fna&_nc_gid=QGui_QizUWelCgW1shxLrg&oh=00_AfNRYv3Sg2G1Sg-0GDgFET_pSozI30TofV6bodfxba9Y5g&oe=6860DC32",
+         caption="GOD OF WAR",
+         use_container_width=True)        
+#Message
+elif page == "Message":
+    st.audio("Drive Home Safe - message in public interest by Junior NTR.mp3", format="audio/mpeg", loop=True)
+
+   
+# Footer
 st.markdown("---")
-st.caption("created Wikipedia-style page | Made with ❤️ using Streamlit")
+st.caption("Made with ❤️ not only by Streamlit")
