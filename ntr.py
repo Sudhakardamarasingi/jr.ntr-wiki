@@ -1,18 +1,7 @@
 import streamlit as st
-from PIL import Image
 
 st.set_page_config(page_title="Jr. NTR - Fan Page", layout="wide")
 
-
-def load_and_resize(image_path, size=(300, 400)):
-    try:
-        img = Image.open(image_path)
-        return img.resize(size)
-    except Exception as e:
-        st.error(f"Error loading image '{image_path}': {e}")
-        return None
-
-         
 # Sidebar
 st.sidebar.title("🎥 Jr. NTR Wiki")
 page = st.sidebar.radio("Go to", ["Home", "Biography", "Career", "Filmography", "Awards","Anticipated movies","Message"])
@@ -90,26 +79,23 @@ elif page == "Awards":
 
 #Anticipated movies
 elif page == "Anticipated movies":
-    col1, col2, col3, col4 = st.columns(4)
-
+    col1,col2,col3,col4=st.columns(4)
     with col1:
         st.image("https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSVZ1yNwu2MLyl3dqE82OX-dRIAE1gxt6Op5EbdWhTXJCz7aaq7",
-                 caption="WAR2", width=300)
-
-    with col2:
-        img2 = load_and_resize("Screenshot 2025-07-21 215537.png")
-        if img2:
-            st.image(img2, caption="Dragon")
-
-    with col3:
+         caption="WAR2",
+         use_container_width=True)
+    with col2:     
+        st.image("Screenshot 2025-07-21 215537.png",
+         caption="Dragon",
+         use_container_width=True)
+    with col3:     
         st.image("https://cdn.gulte.com/wp-content/uploads/2025/03/Devara-part-2-.jpg",
-                 caption="Devara-2", width=300)
-
-    with col4:
-        img4 = load_and_resize("god_of_war.jpg")
-        if img4:
-            st.image(img4, caption="GOD OF WAR")
-      
+         caption="Devara-2",
+         use_container_width=True)  
+    with col4:     
+        st.image("god_of_war.jpg",
+         caption="GOD OF WAR",
+         use_container_width=True)        
 #Message
 elif page == "Message":
     st.audio("Drive Home Safe - message in public interest by Junior NTR.mp3", format="audio/mpeg", loop=True)
