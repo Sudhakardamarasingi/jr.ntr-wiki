@@ -94,11 +94,11 @@ elif page == "Anticipated movies":
          caption="Dragon",
          use_container_width=True)
     with col3:     
-        st.image("https://cdn.gulte.com/wp-content/uploads/2025/03/Devara-part-2-.jpg",
+        st.image("https://cdn.gulte.com/wp-content/uploads/2025/03/Devara-part-2-.jpg",width=300,
          caption="Devara-2",
          use_container_width=True)  
     with col4:     
-        st.image("god_of_war.jpg",
+        st.image("god_of_war.jpg",width=300,
          caption="GOD OF WAR",
          use_container_width=True)        
 #Message
