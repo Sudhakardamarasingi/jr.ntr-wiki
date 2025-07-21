@@ -85,7 +85,7 @@ elif page == "Anticipated movies":
          caption="WAR2",
          use_container_width=True)
     with col2:     
-        st.image("https://scontent.fblr18-1.fna.fbcdn.net/v/t39.30808-6/488088454_1226089598873434_4650105298467268981_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=833d8c&_nc_ohc=A_kvTtxKjzcQ7kNvwGrah5w&_nc_oc=AdnHe4X5YHsIReruBhz3xFIzTQ-kQLuUOkFc-UL_k-qdWoVAr861x5Y2U_IPehaBCiI&_nc_zt=23&_nc_ht=scontent.fblr18-1.fna&_nc_gid=o_taZAFoGHP3hTLm_mzUHQ&oh=00_AfOwNwLoaqo18cf5iXXdcecvIeBcNE4oGKkcg-tpZwSHnQ&oe=6860FF80",
+        st.image("Screenshot 2025-07-21 215537.png",
          caption="Dragon",
          use_container_width=True)
     with col3:     
