@@ -78,6 +78,11 @@ elif page == "Awards":
     """)
 
 #Anticipated movies
+from PIL import Image
+
+def resize_image(img_path, size=(300, 400)):
+    img = Image.open(img_path)
+    return img.resize(size)
 elif page == "Anticipated movies":
     col1,col2,col3,col4=st.columns(4)
     with col1:
