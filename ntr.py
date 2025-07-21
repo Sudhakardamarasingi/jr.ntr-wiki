@@ -86,21 +86,20 @@ elif page == "Awards":
 elif page == "Anticipated movies":
     col1,col2,col3,col4=st.columns(4)
     with col1:
-        st.image("https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSVZ1yNwu2MLyl3dqE82OX-dRIAE1gxt6Op5EbdWhTXJCz7aaq7",
-         caption="WAR2",
-         use_container_width=True)
-    with col2:     
-        st.image("Screenshot 2025-07-21 215537.png",
-         caption="Dragon",
-         use_container_width=True)
-    with col3:     
-        st.image("https://cdn.gulte.com/wp-content/uploads/2025/03/Devara-part-2-.jpg",width=300,
-         caption="Devara-2",
-         use_container_width=True)  
-    with col4:     
-        st.image("god_of_war.jpg",width=300,
-         caption="GOD OF WAR",
-         use_container_width=True)        
+        url_image = "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSVZ1yNwu2MLyl3dqE82OX-dRIAE1gxt6Op5EbdWhTXJCz7aaq7"
+        st.image(url_image, caption="WAR2", width=300)
+
+    with col2:
+        img2 = load_and_resize("Screenshot 2025-07-21 215537.png")
+        st.image(img2, caption="Dragon")
+
+    with col3:
+        url_image2 = "https://cdn.gulte.com/wp-content/uploads/2025/03/Devara-part-2-.jpg"
+        st.image(url_image2, caption="Devara-2", width=300)
+
+    with col4:
+        img4 = load_and_resize("god_of_war.jpg")
+        st.image(img4, caption="GOD OF WAR")        
 #Message
 elif page == "Message":
     st.audio("Drive Home Safe - message in public interest by Junior NTR.mp3", format="audio/mpeg", loop=True)
