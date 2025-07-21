@@ -93,7 +93,7 @@ elif page == "Anticipated movies":
          caption="Devara-2",
          use_container_width=True)  
     with col4:     
-        st.image("https://scontent.fblr18-1.fna.fbcdn.net/v/t39.30808-6/505980449_1305279287829972_925382284372086798_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=833d8c&_nc_ohc=VDqfqVr5LzsQ7kNvwFJBrwo&_nc_oc=AdkKQnslPkK3AeUiN6R0lNHZaVdCiT3CQ7PXLR6NhyA0ozhcoGolEYUKzMOef7Ys2ks&_nc_zt=23&_nc_ht=scontent.fblr18-1.fna&_nc_gid=QGui_QizUWelCgW1shxLrg&oh=00_AfNRYv3Sg2G1Sg-0GDgFET_pSozI30TofV6bodfxba9Y5g&oe=6860DC32",
+        st.image("god_of_war.jpg",
          caption="GOD OF WAR",
          use_container_width=True)        
 #Message
